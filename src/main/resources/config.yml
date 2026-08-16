@@ -1,0 +1,50 @@
+# Configuration for RankListVelocity
+
+# The default prefix used when luckperms prefix is missing or null
+default-prefix: "&7[Default]"
+
+# The format for displaying the player list
+# {header} will be replaced by the groups-header text
+# {players} will be replaced by the player list
+# {limit} will be replaced by max-players
+# {online} will be replaced by online-players
+list-format:
+  - "{header}"
+  - " "
+  - "{players}"
+
+# Formatting for individual players in the list
+# {prefix} - the player's prefix
+# {name} - the player's name
+player-format: "{prefix} {name}"
+
+# Delimiter between players
+player-delimiter: "&8, "
+
+# Format for when there are more than 'max-display' players
+# {more} will be replaced by the number of extra players
+more-format: "&7(+{more} more)"
+
+# Maximum number of players to display before grouping them into 'more-format'
+max-display: 30
+
+# The header string to display the order of ranks
+groups-header: "&cOwner&7, &4Manager&7, &cAdmin&7, &5Moderator&7, &9Helper&7, &aBuilder&7, &dPartner&7, &6Famous&7, &dMedia&7, &bACE&7, &bMVP&7, &bPRO&7, &bVIP&7, &7Default &8(&e{online}&8/&e{limit}&8)&8:"
+
+# Sort order for ranks, from highest (first) to lowest (last)
+# Players in groups not listed here will be sorted to the end
+sort-order:
+  - "owner"
+  - "manager"
+  - "admin"
+  - "moderator"
+  - "helper"
+  - "builder"
+  - "partner"
+  - "famous"
+  - "media"
+  - "ace"
+  - "mvp"
+  - "pro"
+  - "vip"
+  - "default"
